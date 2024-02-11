@@ -1,0 +1,14 @@
+package com.rahul.emailservice.kafka.consumer;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Service;
+
+import com.rahul.stockservice.kafka.OrderConsumer;
+
+@Service
+public class EmailOrderConsumer {
+	
+	private static final Logger log = LoggerFactory.getLogger(OrderConsumer.class);
+
+}

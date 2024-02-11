@@ -1,0 +1,8 @@
+INDEX VERSION 1.131+D:\Java WorkSpace\spring-kafak\Event Driven Kafka project\.metadata\.plugins\org.eclipse.jdt.core
+715374721.index
+3313465705.index
+1865797976.index
+1287580752.index
+585086131.index
+1629028613.index
+2635933550.index

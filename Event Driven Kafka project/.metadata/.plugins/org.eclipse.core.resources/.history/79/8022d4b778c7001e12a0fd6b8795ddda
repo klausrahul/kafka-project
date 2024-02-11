@@ -1,0 +1,21 @@
+package com.rahul.orderservice.config;
+
+import org.apache.kafka.clients.admin.NewTopic;
+import org.springframework.kafka.core.KafkaTemplate;
+import org.springframework.stereotype.Service;
+
+import com.rahul.basedomain.dto.OrderEvent;
+
+@Service
+public class KafkaProducer {
+
+	private NewTopic topic;
+	private KafkaTemplate<String, OrderEvent> kafkaTemplate;
+	public KafkaProducer(NewTopic topic, KafkaTemplate<String, OrderEvent> kafkaTemplate) {
+		super();
+		this.topic = topic;
+		this.kafkaTemplate = kafkaTemplate;
+	}
+	
+	
+}

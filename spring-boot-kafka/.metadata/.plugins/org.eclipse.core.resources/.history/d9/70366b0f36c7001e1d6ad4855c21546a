@@ -1,0 +1,8 @@
+package com.rahul.springboot.entity;
+
+public class WikimediaData {
+	
+	private Long id;
+	private String wikiEventData;
+
+}

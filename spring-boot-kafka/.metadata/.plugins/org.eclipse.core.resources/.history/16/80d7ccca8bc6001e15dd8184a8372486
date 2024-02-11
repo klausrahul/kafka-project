@@ -1,0 +1,5 @@
+package com.rahul.kafka.producer;
+
+public class JsonKafkaConsumer {
+
+}

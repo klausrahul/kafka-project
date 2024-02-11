@@ -1,0 +1,36 @@
+package com.rahul.kafka.producer;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.kafka.core.KafkaTemplate;
+import org.springframework.stereotype.Service;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.rahul.kafka.model.User;
+
+@Service
+public class jsonKafkaProducer {
+	
+	private static final Logger log=LoggerFactory.getLogger(jsonKafkaProducer.class);
+	
+	private KafkaTemplate<String, User> kafkaTemplate;
+	@Autowired
+	public jsonKafkaProducer(KafkaTemplate<String, User> kafkaTemplate) {
+		this.kafkaTemplate = kafkaTemplate;
+	}
+	
+	public void sendMessage(User date) {
+		ObjectMapper mapper=new ObjectMapper();
+		mapper.writerWithDefaultPrettyPrinter(date);
+		mapper.writeValueAsString(date);
+	
+		
+		
+		log.info(String.format("Message sent %s",));
+		kafkaTemplate.send("KafkaDemo", message);
+	}
+	
+	
+
+}

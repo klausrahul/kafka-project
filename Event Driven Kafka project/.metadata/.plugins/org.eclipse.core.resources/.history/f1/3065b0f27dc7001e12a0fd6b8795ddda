@@ -1,0 +1,8 @@
+package com.rahul.emailservice.kafka.consumer;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class EmailOrderConsumer {
+
+}

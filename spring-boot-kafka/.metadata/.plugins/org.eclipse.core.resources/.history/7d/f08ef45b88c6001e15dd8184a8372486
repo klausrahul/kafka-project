@@ -1,0 +1,5 @@
+package com.rahul.kafka.model;
+
+public class User {
+
+}

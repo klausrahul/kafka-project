@@ -1,0 +1,5 @@
+package com.rahul.springboot.producer.config;
+
+public class WikimediaChangesProducer {
+
+}

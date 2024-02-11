@@ -1,0 +1,12 @@
+package com.rahul.orderservice.config;
+
+import org.springframework.kafka.core.KafkaTemplate;
+import org.springframework.stereotype.Service;
+
+import com.rahul.basedomain.dto.OrderEvent;
+
+@Service
+public class KafkaProducer {
+
+	private KafkaTemplate<String, OrderEvent>
+}

@@ -1,0 +1,16 @@
+package com.deliveryboy.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.kafka.core.KafkaTemplate;
+
+import com.deliveryboy.config.AppConstents;
+
+public class KafkaService {
+
+	@Autowired
+	KafkaTemplate<String, String> kafkaTemplate;
+	public boolean updateLocation(String location) {
+		kafkaTemplate.send(AppConstents.LOCATION_TOPIC_NAME, location);
+		return true;
+	}
+}
